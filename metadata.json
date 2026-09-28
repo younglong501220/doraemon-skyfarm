@@ -1,0 +1,6 @@
+{
+  "name": "哆啦A夢 牧場物語：空之島",
+  "description": "在浮空農場耕作、使用秘密道具培育巨型作物，喚醒記憶之樹，拯救空之島！支援手機 PWA 安裝與離線遊玩。",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

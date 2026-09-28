@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+@layer base {
+  * {
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
+  }
+  
+  /* Smooth touch scrolling */
+  body {
+    overscroll-behavior-y: none;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+/* Custom animations for cute cozy Doraemon farm */
+@keyframes float-cloud {
+  0% { transform: translateX(-10%); }
+  50% { transform: translateX(10%); }
+  100% { transform: translateX(-10%); }
+}
+
+@keyframes gentle-bob {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
+@keyframes sparkle-pulse {
+  0%, 100% { opacity: 0.3; transform: scale(0.9); }
+  50% { opacity: 1; transform: scale(1.1); }
+}
+
+@keyframes harvest-pop {
+  0% { transform: scale(0.8) translateY(10px); opacity: 0; }
+  60% { transform: scale(1.2) translateY(-8px); opacity: 1; }
+  100% { transform: scale(1) translateY(0); opacity: 1; }
+}
+
+.animate-float-cloud {
+  animation: float-cloud 24s ease-in-out infinite;
+}
+
+.animate-gentle-bob {
+  animation: gentle-bob 3s ease-in-out infinite;
+}
+
+.animate-sparkle {
+  animation: sparkle-pulse 2s ease-in-out infinite;
+}
+
+.animate-harvest-pop {
+  animation: harvest-pop 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+/* Custom scrollbar for adventure logs and shops */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(56, 189, 248, 0.4);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(2, 132, 199, 0.7);
+}

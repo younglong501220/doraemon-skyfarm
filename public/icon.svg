@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="skyGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+    <linearGradient id="islandGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#86efac"/>
+      <stop offset="35%" stop-color="#22c55e"/>
+      <stop offset="100%" stop-color="#854d0e"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+
+  <!-- Background rounded rect -->
+  <rect width="512" height="512" rx="128" fill="url(#skyGrad)"/>
+
+  <!-- Fluffy Cloud -->
+  <path d="M 120 320 A 45 45 0 0 1 180 280 A 65 65 0 0 1 290 270 A 55 55 0 0 1 370 310 A 40 40 0 0 1 390 350 A 40 40 0 0 1 360 390 L 130 390 A 35 35 0 0 1 120 320 Z" fill="#ffffff" opacity="0.9" filter="url(#shadow)"/>
+
+  <!-- Floating Island Base -->
+  <ellipse cx="256" cy="330" rx="170" ry="45" fill="url(#islandGrad)"/>
+  <path d="M 86 330 Q 256 460 426 330 Q 340 375 256 375 Q 170 375 86 330 Z" fill="#78350f"/>
+
+  <!-- Doraemon Head / Bell motif -->
+  <!-- Cute Doraemon Silhouette / Bell -->
+  <circle cx="256" cy="220" r="100" fill="#0284c7" stroke="#ffffff" stroke-width="8"/>
+  <circle cx="256" cy="235" r="75" fill="#ffffff"/>
+  
+  <!-- Red Collar -->
+  <rect x="186" y="275" width="140" height="24" rx="12" fill="#ef4444" stroke="#ffffff" stroke-width="3"/>
+  
+  <!-- Golden Bell -->
+  <circle cx="256" cy="295" r="28" fill="#eab308" stroke="#ffffff" stroke-width="4"/>
+  <circle cx="256" cy="290" r="6" fill="#713f12"/>
+  <line x1="256" y1="296" x2="256" y2="315" stroke="#713f12" stroke-width="4"/>
+  <line x1="236" y1="290" x2="276" y2="290" stroke="#713f12" stroke-width="3"/>
+
+  <!-- Sprout emerging from bell (Story of Seasons crossover!) -->
+  <path d="M 256 220 Q 256 150 256 120" stroke="#16a34a" stroke-width="10" stroke-linecap="round" fill="none"/>
+  <!-- Left leaf -->
+  <path d="M 256 160 Q 210 130 200 170 Q 220 185 256 170 Z" fill="#22c55e" stroke="#15803d" stroke-width="3"/>
+  <!-- Right leaf -->
+  <path d="M 256 135 Q 305 105 315 145 Q 295 160 256 145 Z" fill="#4ade80" stroke="#15803d" stroke-width="3"/>
+
+  <!-- Sparkling stars -->
+  <polygon points="120,140 126,155 142,160 126,166 120,182 114,166 98,160 114,155" fill="#fde047"/>
+  <polygon points="380,120 384,132 398,136 384,141 380,154 375,141 362,136 375,132" fill="#fde047"/>
+  <polygon points="410,230 413,240 424,243 413,247 410,258 406,247 395,243 406,240" fill="#fde047"/>
+</svg>
